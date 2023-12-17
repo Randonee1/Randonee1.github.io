@@ -48,6 +48,40 @@
 				</section>
 
 				<section>
+
+                    <section>
+                        <h2>Overall Structure</h2>
+                    </section>
+
+                    <section>
+                        <h2>
+                            Shell frontend<br>
+                            +<br> 
+                            Web-like backend
+                        </h2>
+                    </section>
+
+                    <section>
+                        <h3>Client Process</h3>
+                        <p>User interact with the system using <strong>shell.</strong></p>
+                        <p>Shell uses <strong>fork</strong> and <strong>execve</strong> to forward commands to the requesting program in the bin directory.</p>
+                        <img src="./img/client.png" style="width: 70%; height: 70%;">
+                    </section>
+
+                    <section>
+                        <h3>Server Process</h3>
+                        <p>Server registers functions in the specified <strong>path</strong>.</p>
+                        <p>Request carry the path to the function. Server fork a process to response the request.</p>
+                        <img src="./img/server.png" style="width: 70%; height: 70%">
+                    </section>
+                    <section>
+                        <h3>Expandability</h3>
+                        <p>All the function of the frontend and backend are independent of the main program, so as to realize the <strong>expandability</strong> of the system.</p>
+                    </section>
+                    
+                </section>
+
+				<section>
                     <section>
                         <h2>Admin</h2>
                     </section>
@@ -217,39 +251,6 @@
                     </section>
                 </section>
 
-				<section>
-
-                    <section>
-                        <h2>Overall Structure</h2>
-                    </section>
-
-                    <section>
-                        <h2>
-                            Shell frontend<br>
-                            +<br> 
-                            Web-like backend
-                        </h2>
-                    </section>
-
-                    <section>
-                        <h3>Client Process</h3>
-                        <p>User interact with the system using <strong>shell.</strong></p>
-                        <p>Shell uses <strong>fork</strong> and <strong>execve</strong> to forward commands to the requesting program in the bin directory.</p>
-                        <img src="./img/client.png" style="width: 70%; height: 70%;">
-                    </section>
-
-                    <section>
-                        <h3>Server Process</h3>
-                        <p>Server registers functions in the specified <strong>path</strong>.</p>
-                        <p>Request carry the path to the function. Server fork a process to response the request.</p>
-                        <img src="./img/server.png" style="width: 70%; height: 70%">
-                    </section>
-                    <section>
-                        <h3>Expandability</h3>
-                        <p>All the function of the frontend and backend are independent of the main program, so as to realize the <strong>expandability</strong> of the system.</p>
-                    </section>
-                    
-                </section>
                 <section>
                     <section>
                         <h2>Socket</h2>
